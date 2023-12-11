@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Dekstop Design](./screenshots/Desktop.png)
 
 
 
