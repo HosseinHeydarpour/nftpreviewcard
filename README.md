@@ -18,6 +18,8 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ## Overview
 
+Greetings fellow programmers, I present my implementation of the NFT preview card challenge on Frontend Mentor. I eagerly seek your constructive feedback on the project.
+
 ### The challenge
 
 Users should be able to:
