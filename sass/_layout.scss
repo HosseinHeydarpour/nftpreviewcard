@@ -1,0 +1,109 @@
+.card {
+  max-width: 35rem;
+  border-radius: 12px;
+  background-color: $color-card-bg;
+  padding: 2.1rem;
+
+  z-index: 50;
+
+  &__image-box {
+    position: relative;
+    border-radius: 8px;
+    z-index: 100;
+    cursor: pointer;
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 8px;
+      height: 100%;
+      background: rgba($color-cyan, 0.4);
+
+      display: block;
+      z-index: 100;
+    }
+    &:hover:before {
+      content: "";
+      background-image: url("../images/icon-view.svg");
+      background-repeat: no-repeat;
+      display: block;
+      position: absolute;
+      height: 4.8rem;
+      width: 4.8rem;
+      display: block;
+      z-index: 155;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 2.4rem;
+    position: relative;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+
+    & div {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 1.6rem;
+    border-top: 1px solid $color-line;
+    &--img {
+      width: 12%;
+      padding: 1px;
+      background-color: $color-white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &--user {
+      color: $color-soft-blue;
+      font-style: normal;
+    }
+    &--link:link,
+    &--link:visited {
+      text-decoration: none;
+      color: $color-white;
+    }
+    &--link:hover,
+    &--link:active {
+      color: $color-cyan;
+    }
+  }
+
+  &__caption {
+    color: $color-soft-blue;
+    margin-bottom: 2.4rem;
+    line-height: 1.4;
+  }
+
+  &__price {
+    margin-bottom: 2.4rem;
+    &--eth {
+      color: $color-cyan;
+    }
+    &--time {
+      color: $color-soft-blue;
+    }
+  }
+}

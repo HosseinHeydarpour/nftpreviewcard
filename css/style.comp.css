@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+.card {
+  max-width: 35rem;
+  border-radius: 12px;
+  background-color: #14253d;
+  padding: 2.1rem;
+  z-index: 50; }
+  .card__image-box {
+    position: relative;
+    border-radius: 8px;
+    z-index: 100;
+    cursor: pointer; }
+    .card__image-box:hover::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 8px;
+      height: 100%;
+      background: rgba(0, 255, 247, 0.4);
+      display: block;
+      z-index: 100; }
+    .card__image-box:hover:before {
+      content: "";
+      background-image: url("../images/icon-view.svg");
+      background-repeat: no-repeat;
+      display: block;
+      position: absolute;
+      height: 4.8rem;
+      width: 4.8rem;
+      display: block;
+      z-index: 155;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .card__image {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 2.4rem;
+    position: relative; }
+  .card__price {
+    display: flex;
+    justify-content: space-between; }
+    .card__price div {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center; }
+  .card__footer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 1.6rem;
+    border-top: 1px solid #2f415b; }
+    .card__footer--img {
+      width: 12%;
+      padding: 1px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .card__footer--user {
+      color: #8bacda;
+      font-style: normal; }
+    .card__footer--link:link, .card__footer--link:visited {
+      text-decoration: none;
+      color: white; }
+    .card__footer--link:hover, .card__footer--link:active {
+      color: #00fff7; }
+  .card__caption {
+    color: #8bacda;
+    margin-bottom: 2.4rem;
+    line-height: 1.4; }
+  .card__price {
+    margin-bottom: 2.4rem; }
+    .card__price--eth {
+      color: #00fff7; }
+    .card__price--time {
+      color: #8bacda; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+body {
+  font-size: 1.8rem;
+  font-family: "Outfit", sans-serif;
+  line-height: 1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32rem 0;
+  background-color: #0d192b; }
+
+.heading__primary {
+  font-size: 2.4rem;
+  color: white;
+  margin-bottom: 2rem; }
+  .heading__primary:hover {
+    color: #00fff7;
+    cursor: pointer; }
